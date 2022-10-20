@@ -14,9 +14,11 @@ body {
   min-height: 100vh;
   overflow: auto;
 }
-body::-webkit-scrollbar{
+
+body::-webkit-scrollbar {
   display: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -34,13 +36,16 @@ video {
 }
 
 section p {
-  text-align: center;
+  padding: 0px;
+  margin-bottom: 0;
 }
-.videoclass{
+
+.videoclass {
   height: 100vh;
   width: 100vw;
 }
-.logo{
+
+.logo {
   width: 100px;
   height: 100px;
   display: block;
@@ -59,10 +64,13 @@ section p {
   z-index: 2;
   text-transform: uppercase;
   text-align: center;
-  font-size: 5vh;
+  font-size: 6vh;
   font-weight: 900;
   line-height: 0.7;
-  padding: 50vh 0 0 0;
+}
+
+.dummy-inside {
+  padding: 1vh 10vw 1vw 10vw;
 }
 
 h2 {
@@ -74,7 +82,8 @@ h2 {
 
 .scroll-dummy p,
 .scroll-dummy a {
-  font-size: 1.2em;
+  margin: 0;
+  font-size: 1em;
   color: #ffffff;
   line-height: 1.4;
 }
@@ -93,9 +102,7 @@ code {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  padding: 1vw;
-  margin: 1vw 10vw 1vw 10vw;
+  padding: 3vw;
 }
 
 .footer {
@@ -107,6 +114,10 @@ code {
   text-align: center;
 }
 
+.align-box {
+  text-align: justify;
+}
+
 .glove-space {
   margin-bottom: 20vh !important;
 }
@@ -114,21 +125,17 @@ code {
 .buttonscontainer {
   display: flex;
   z-index: 2;
-  justify-content: center;
-  padding: 1vh 8vw 1vw 8vw;
 }
 
 .btn {
-  flex: 1;
-  text-align: center;
   flex-grow: 1;
+  text-align: center;
   padding: 20px;
   font-size: 0.7em;
   font-family: 'Syne', sans-serif !important;
   color: #ffffff;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 0 2vw;
 }
 
 .footer {
@@ -147,53 +154,86 @@ code {
   font-weight: 900;
   text-transform: uppercase;
 }
-.mobilebtn{
+
+.mobilebtn {
   display: none;
 }
-.technologies{
+
+.technologies {
   margin: 5vh 0;
 }
-.technologies ul{
+
+.technologies ul {
+  padding-left: 4vw;
   list-style: none;
-  max-width: 60vw;;
 }
-.technologies ul li{
+
+.technologies ul li {
   font-weight: 700;
-  line-height: 1.2;
-  font-size: 1.3em;}
-.technologies i{
+  line-height: 1.7;
+  font-size: 1.5em;
+}
+
+.technologies i {
   font-size: 30px;
   padding: 10px;
 }
+
+.scroll-dummy-link {
+  display: block;
+  margin-top: 67vh !important;
+}
+
 @media only screen and (max-width: 600px) {
   .scroll-dummy {
     max-width: 90vw;
   }
+
+  .scroll-dummy h1 {
+    font-size: 1.8em;
+  }
+
   .scroll-dummy p {
     font-size: 0.8em;
     padding-left: 10px;
     padding-right: 10px;
   }
+
   .blurbackground {
-    margin: 5vw 10vw 5vw 10vw;
+    padding: 5vw;
   }
+
   .buttonscontainer {
-    font-size: 0.4em;
-    padding: 0 8vw;
+    font-size: 0.5em;
   }
+
   .btn {
-    margin: 0 2vw;
+    flex-grow: 1;
   }
+
   h2 {
     font-size: 0.8em;
   }
-  .desktopbtn{
-    
+
+  .desktopbtn {
+
     display: none;
   }
-  .mobilebtn{
+
+  .mobilebtn {
     display: block;
   }
+
+  .technologies ul {
+    padding-left: 2px;
+  }
+
+  .technologies ul li {
+    font-size: 1em;
+  }
+
+  .scroll-dummy-link {
+    margin-top: 52vh !important;
+  }
+
 }
-
-
